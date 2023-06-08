@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+}
+header {
+  background-color: #bbb;
+}
+
+.container {
+  background-color: #bbb;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  padding: 20px 0;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  float: left;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 17px;
+  padding: 0 16px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #bbf;
+}
+
+nav ul li ul {
+  position: absolute;
+  display: none;
+  background-color: #bbb;
+  border-radius: 0 0 5px 5px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  line-height: 1;
+  width: 190px;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+nav ul li ul li a {
+  padding: 10px 16px;
+}
+
+nav ul li ul li a:hover {
+  background-color: #bbf;
+}
+
+/* ////////////////////////////////// */
+
+/* html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  background-color: #bbb;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header__inner {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__img {
+  width: 250px;
+}
+
+.cart__img {
+  width: 50px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 35px;
+}
+
+.menu__list-link {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+}
+
+.menu__list-link:hover {
+  width: 100%;
+  background: #000;
+  color: #fff;
+}
+
+.menu__list-brands,
+.menu__list-categori {
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+             */
