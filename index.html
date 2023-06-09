@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fishing Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -48,68 +49,71 @@
                 </ul>
 
                 <a class="cart" href="#">
-                    <img src="./img/cart.svg" alt="Cart" />
+                    <img class="cart" src="./img/cart.svg" alt="Cart" />
                 </a>
             </nav>
         </div>
     </header>
 
-    <footer class="footer">
+    <main class="main">
         <div class="container">
-            <img src="./img/1.svg" alt="" />
+            <div class="slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url(./img/rods/rods1.jpg);">
+                            <div class="swiper__content">
+                                <p>02.06-22.06</p>
+                                <h1 class="swiper__title">
+                                    PROMO 20%
+                                </h1>
+                                <a class="swiper__link" href="#">
+                                    SEE HERE!
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url(./img/rods/rods2.jpg);">
+                            <div class="swiper__content">
+                                <p>02.06-22.06</p>
+                                <h1 class="swiper__title">
+                                    PROMO 20%
+                                </h1>
+                                <a class="swiper__link" href="#">
+                                    SEE HERE!
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url(./img/rods/rods3.jpg);">
+                            <div class="swiper__content">
+                                <p>02.06-22.06</p>
+                                <h1 class="swiper__title">
+                                    PROMO 20%
+                                </h1>
+                                <a class="swiper__link" href="#">
+                                    SEE HERE!
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url(./img/rods/rods4.jpg);">
+                            <div class="swiper__content swiper__content-right">
+                                <p>02.06-22.06</p>
+                                <h1 class="swiper__title">
+                                    PROMO 20%
+                                </h1>
+                                <a class="swiper__link" href="#">
+                                    SEE HERE!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
         </div>
-    </footer>
+    </main>
 
-
-    <!-- <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <a class="logo" href="#">
-                        <img class="logo__img" src="./img/1.svg" alt="logo" />
-                    </a>
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">HOME</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">DISCOUNT</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">BRANDS</a>
-                                <ul>
-                                    <li class="menu__list-brands"><a href="#">RTRMAX</a></li>
-                                    <li class="menu__list-brands"><a href="#">DeWalt</a></li>
-                                    <li class="menu__list-brands"><a href="#">Husqvarna</a></li>
-                                    <li class="menu__list-brands"><a href="#">Raider</a></li>
-                                    <li class="menu__list-brands"><a href="#">AL-KO</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">CATEGORIES</a>
-                                <ul>
-                                    <li class="menu__list-categori"><a href="#">Reel</a></li>
-                                    <li class="menu__list-categori">
-                                        <a href="#">Monofilament line</a>
-                                    </li>
-                                    <li class="menu__list-categori"><a href="#">Rods</a></li>
-                                    <li class="menu__list-categori"><a href="#">Hooks</a></li>
-                                    <li class="menu__list-categori"><a href="#">Clothes and shoes</a> </li>
-                                    <li class="menu__list-categori"><a href="#">Accesories</a> </li>
-                                    <li class="menu__list-categori"><a href="#">Lure</a></li>
-                                    <li class="menu__list-categori"><a href="#">Bait</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">BLOG</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">CONTACTS</a>
-                            </li>
-                        </ul>
-                    </nav>
-                -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
