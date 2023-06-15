@@ -13,7 +13,7 @@ body {
   width: 100%;
 }
 header {
-  background-color: #bbb;
+  background-color: #afc6ec;
 }
 
 .container {
@@ -49,20 +49,21 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
-  font-size: 17px;
-  padding: 0 16px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 16px 16px;
   display: block;
 }
 
 nav ul li a:hover {
-  background-color: #bbf;
+  background-color: #91bafe;
 }
 
 nav ul li ul {
   position: absolute;
   display: none;
-  background-color: #bbb;
+  background-color: #afc6ec;
   border-radius: 0 0 5px 5px;
 }
 
@@ -73,17 +74,45 @@ nav ul li:hover ul {
 
 nav ul li ul li {
   line-height: 1;
-  width: 190px;
+  width: 200px;
   border-radius: 5px;
   padding: 6px;
 }
 
 nav ul li ul li a {
   padding: 10px 16px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 nav ul li ul li a:hover {
-  background-color: #bbf;
+  background-color: #91bafe;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+/* ////////////////////////////////// */
+
+.nav__right {
+  display: flex;
+  position: fixed;
+  right: 0;
+  padding-top: 175px;
+}
+
+.nav__items {
+  background-color: #afc6ec;
+  padding: 18px;
+}
+
+.nav__items:hover {
+  position: relative;
+  background-color: #91bafe;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15), -3px -3px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.2s all;
+}
+
+.nav__item {
+  width: 34px;
+  height: 34px;
 }
 
 /* ////////////////////////////////// */
@@ -91,79 +120,164 @@ nav ul li ul li a:hover {
   padding-top: 50px;
 }
 
-.swiper__content {
-  margin: 450px 150px;
-  text-transform: uppercase;
-  max-width: 300px;
-  font-weight: 700;
-  color: #fff;
-  display: block;
-}
-
-.swiper__content-right {
-  /* margin: 500px 700px; */
-  display: block;
-}
-
-.swiper__content p {
-  background-color: red;
-  color: #000;
-  font-size: 16px;
-  text-align: center;
-  border-radius: 30px;
-  max-width: 200px;
-  padding: 7px;
-}
-
-.swiper__content h1 {
-  padding: 20px 0;
-  font-size: 30px;
-}
-
-.swiper__title {
-  font-size: 25px;
-}
-
-.swiper__link {
-  display: inline-block;
-  width: 100%;
-  max-width: 200px;
-  padding: 23px;
-  border-radius: 65px;
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 500;
-}
-
 .swiper-slide {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  height: 100vh;
+  width: 1200px;
+  height: 500px;
 }
 
-.swiper-pagination-bullet{
-width: 100px;
-height: 4px;
-background-color: #000;
-border-radius: 0;
-opacity: 1;
+.swiper-pagination-bullet {
+  width: 100px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 0;
+  opacity: 1;
 }
 
 .swiper-pagination-horizontal.swiper-pagination-bullets
-.swiper-pagination-bullet {
+  .swiper-pagination-bullet {
   margin: 0 15px;
 }
 
-.swiper-pagination-bullets.swiper-pagination-horizontal{
+.swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 50px;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   height: 6px;
   background-color: #fff;
 }
 
 /* ////////////////////////////////// */
+
+.spin {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.spin__elements {
+  width: 600px;
+  height: 600px;
+  background-color: #afc6ec;
+  border-radius: 50%;
+  border: 15px solid #91bafe;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.spin__elements div {
+  height: 50%;
+  width: 300px;
+  position: absolute;
+  clip-path: polygon(80% 0, 50% 100%, 0 0);
+  transform: translateX(-50%);
+  transform-origin: bottom;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size: 28px; */
+  /* font-weight: bold; */
+  /* color: #000; */
+  left: 136px;
+}
+
+.spin__elements .one {
+  background-color: blue;
+  transform: rotate(0deg);
+}
+
+.one img {
+  width: 165px;
+  height: 75px;
+  transform: rotate(84.19deg);
+  /* transform: rotate(80deg); */
+  /* padding-right: 60px;
+  padding-top: 10px;
+  width: 100%; */
+}
+
+.spin__elements .two {
+  background-color: blueviolet;
+  transform: rotate(45deg);
+}
+
+.two img {
+  width: 165px;
+  height: 65px;
+  transform: rotate(-84.19deg);
+}
+
+.spin__elements .three {
+  background-color: gold;
+  transform: rotate(90deg);
+}
+.three img {
+  width: 165px;
+  height: 65px;
+  transform: rotate(-90deg);
+  transform-origin: 45%;
+  scale: 1 -1;
+}
+
+.spin__elements .four {
+  background-color: darkcyan;
+  transform: rotate(135deg);
+}
+
+.four img {
+  width: 165px;
+  height: 68px;
+  transform: rotate(95deg);
+}
+
+.spin__elements .five {
+  background-color: darkgreen;
+  transform: rotate(180deg);
+}
+
+.five img {
+  width: 165px;
+  height: 75px;
+  transform: rotate(90deg);
+}
+
+.spin__elements .six {
+  background-color: fuchsia;
+  transform: rotate(225deg);
+}
+
+.six img {
+  width: 165px;
+  height: 75px;
+  transform: rotate(-85deg);
+}
+
+.spin__elements .seven {
+  background-color: peru;
+  transform: rotate(270deg);
+}
+
+ .seven img {
+  width: 165px;
+  height: 75px;
+  transform: rotate(85.19deg);
+}
+
+.spin__elements .eight {
+  background-color: violet;
+  transform: rotate(315deg);
+}
+
+ .eight img {
+  width: 165px;
+  height: 7Sx 5px;
+  transform: rotate(85.19deg);
+}
