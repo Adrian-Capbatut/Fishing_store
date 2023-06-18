@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Sen:wght@400;700;800&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Sen", sans-serif;
   list-style: none;
   text-decoration: none;
 }
@@ -45,7 +45,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #000;
+  color: #fff;
   font-size: 20px;
   font-weight: 700;
   padding: 16px 16px;
@@ -53,13 +53,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #91bafe;
+  content: "";
+  /* display: block;
+  border-bottom: 2px solid rgba(225, 202, 150, 0) 100%; */
 }
 
 nav ul li ul {
   position: absolute;
   display: none;
-  /* background-color: #afc6ec; */
   background-color: rgba(41, 74, 124, 0.72);
   border-radius: 0 0 5px 5px;
 }
@@ -203,6 +204,11 @@ nav ul li ul li a:hover {
   height: 156px;
   background-color: #d1d1e0;
   border-radius: 50%;
+  transition: 0.5s;
+}
+
+.content__tool:hover {
+  box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
 .content__tool img {
@@ -219,9 +225,118 @@ nav ul li ul li a:hover {
   color: #010455;
 }
 
+/* ////////////////////////////////// */
+/* License */
+.license {
+  padding-top: 80px;
+}
+
+.license__title,
+.stay__tuned {
+  width: 1200px;
+  height: 70px;
+  background: #d1d1e0;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.license__title h2,
+.stay__tuned h2 {
+  font-family: "El Messiri";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 94px;
+}
+
+.license__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding-top: 50px;
+}
+
+.license__content-rule {
+  padding-left: 50px;
+  max-width: 355px;
+}
+
+.license__content-link {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  color: #010455;
+}
+
+.license__content-rule p,
+.license__content-border-area p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding-bottom: 38px;
+}
+
+.license__content-rule h3,
+.license__content-border-area h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "El Messiri";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 38px;
+}
+
+.license__img {
+  filter: drop-shadow(5px 5px 50px rgba(0, 0, 0, 0.6));
+  border-radius: 50px;
+  width: 350px;
+  height: 172px;
+  margin-top: 40px;
+}
+
+.license__content-border-area {
+  max-width: 350px;
+  padding-right: 50px;
+}
+
+.license__content-border-area a {
+  color: #000;
+}
+
+.license__buttom {
+  display: flex;
+  justify-content: center;
+}
+
+.license__buttom button {
+  border: none;
+  position: relative;
+  width: 188px;
+  height: 65px;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 36px;
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    #afc6ec 0%,
+    rgba(145, 186, 254, 0.76) 36.99%,
+    rgba(1, 4, 85, 0.73) 100%
+  );
+}
+
+.license__buttom button:hover {
+  text-decoration-line: underline;
+  filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.4));
+}
+
 /* Slider */
 .slider {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .swiper-slide {
@@ -255,3 +370,7 @@ nav ul li ul li a:hover {
 }
 
 /* ////////////////////////////////// */
+/* Stay__tuned */
+.stay {
+  padding-top: 100px;
+}
