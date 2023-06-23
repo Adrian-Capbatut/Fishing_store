@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fishing Store</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Swiper css -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -185,10 +187,10 @@
                 <div class="stay__tuned">
                     <h2>Stay tuned!</h2>
                 </div>
-                <div class="slide__container">
-                    <div class="slide__content">
-                        <div class="card__wrapper">
-                            <div class="card">
+                <div class="slide__container swiper mySwiper">
+                    <div class="slide__content ">
+                        <div class="card__wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
                                 <div class="image__content">
                                     <div class="card__image">
                                         <img class="card__img" src="./img/stay__img1.jpg" alt="" />
@@ -205,14 +207,20 @@
                                     <button class="button">Reed More</button>
                                 </div>
                             </div>
+
                         </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
+
         </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Swiper js -->
     <script src="./js/main.js"></script>
 </body>
 
